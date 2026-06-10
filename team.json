@@ -1,0 +1,129 @@
+{
+  "name": "Aurora Eleven",
+  "formation": "4-3-3",
+  "logo": "https://placehold.co/300x300/png?text=LOGO",
+  "players": [
+    {
+      "name": "Ala Sinistra",
+      "position": "AS",
+      "role": "forward",
+      "x": 18,
+      "y": 18,
+      "photo": "https://placehold.co/300x300/png?text=AS",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Punta",
+      "position": "ATT",
+      "role": "forward",
+      "x": 50,
+      "y": 13,
+      "photo": "https://placehold.co/300x300/png?text=ATT",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Ala Destra",
+      "position": "AD",
+      "role": "forward",
+      "x": 82,
+      "y": 18,
+      "photo": "https://placehold.co/300x300/png?text=AD",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Mezzala",
+      "position": "CC",
+      "role": "midfielder",
+      "x": 26,
+      "y": 41,
+      "photo": "https://placehold.co/300x300/png?text=CC",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Regista",
+      "position": "COC",
+      "role": "midfielder",
+      "x": 50,
+      "y": 48,
+      "photo": "https://placehold.co/300x300/png?text=COC",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Mezzala",
+      "position": "CC",
+      "role": "midfielder",
+      "x": 74,
+      "y": 41,
+      "photo": "https://placehold.co/300x300/png?text=CC",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Terzino S.",
+      "position": "TS",
+      "role": "defender",
+      "x": 15,
+      "y": 68,
+      "photo": "https://placehold.co/300x300/png?text=TS",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Centrale",
+      "position": "DC",
+      "role": "defender",
+      "x": 38,
+      "y": 64,
+      "photo": "https://placehold.co/300x300/png?text=DC",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Centrale",
+      "position": "DC",
+      "role": "defender",
+      "x": 62,
+      "y": 64,
+      "photo": "https://placehold.co/300x300/png?text=DC",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Terzino D.",
+      "position": "TD",
+      "role": "defender",
+      "x": 85,
+      "y": 68,
+      "photo": "https://placehold.co/300x300/png?text=TD",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Portiere",
+      "position": "POR",
+      "role": "goalkeeper",
+      "x": 50,
+      "y": 86,
+      "photo": "https://placehold.co/300x300/png?text=POR",
+      "notionUrl": "https://www.notion.so/"
+    }
+  ],
+  "staff": [
+    {
+      "name": "Allenatore",
+      "job": "Allenatore",
+      "role": "coach",
+      "photo": "https://placehold.co/300x300/png?text=Coach",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Vice",
+      "job": "Vice allenatore",
+      "role": "staff",
+      "photo": "https://placehold.co/300x300/png?text=Vice",
+      "notionUrl": "https://www.notion.so/"
+    },
+    {
+      "name": "Preparatore",
+      "job": "Preparatore atletico",
+      "role": "staff",
+      "photo": "https://placehold.co/300x300/png?text=Staff",
+      "notionUrl": "https://www.notion.so/"
+    }
+  ]
+}

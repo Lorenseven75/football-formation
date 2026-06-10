@@ -1,0 +1,247 @@
+
+:root {
+  --bg: #101319;
+  --panel: #171c24;
+  --text: #f7f7f7;
+  --muted: #aab2c0;
+  --goalkeeper: #f4d03f;
+  --defender: #2ecc71;
+  --midfielder: #3498db;
+  --forward: #e74c3c;
+  --coach: #ffffff;
+  --staff: #8b8f97;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0f1218, #161b23);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 5px;
+  font-size: 12px;
+  letter-spacing: .16em;
+  color: var(--muted);
+}
+
+h1, h2, p { margin-top: 0; }
+
+#formation-label { color: var(--muted); }
+
+.team-logo {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #fff;
+  padding: 8px;
+}
+
+.pitch-shell {
+  background: var(--panel);
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 18px 60px rgba(0,0,0,.28);
+}
+
+.pitch {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.82;
+  max-height: 920px;
+  overflow: hidden;
+  border-radius: 18px;
+  background:
+    linear-gradient(rgba(255,255,255,.06), rgba(255,255,255,.06)),
+    repeating-linear-gradient(
+      90deg,
+      #3a9b52 0,
+      #3a9b52 12.5%,
+      #349149 12.5%,
+      #349149 25%
+    );
+  border: 3px solid rgba(255,255,255,.85);
+}
+
+.pitch::before {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  border: 3px solid rgba(255,255,255,.75);
+  border-radius: 3px;
+}
+
+.halfway-line {
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  right: 4%;
+  height: 3px;
+  background: rgba(255,255,255,.75);
+}
+
+.center-circle {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 1;
+  border: 3px solid rgba(255,255,255,.75);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.penalty {
+  position: absolute;
+  left: 28%;
+  width: 44%;
+  height: 13%;
+  border: 3px solid rgba(255,255,255,.75);
+}
+
+.penalty.top { top: 4%; border-top: 0; }
+.penalty.bottom { bottom: 4%; border-bottom: 0; }
+
+.player {
+  --role-color: #fff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: clamp(64px, 10vw, 112px);
+  text-align: center;
+  text-decoration: none;
+  color: var(--text);
+  z-index: 2;
+}
+
+.player-card {
+  position: relative;
+  display: block;
+}
+
+.player-photo {
+  width: clamp(58px, 8vw, 94px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--role-color);
+  background: #dde2ea;
+  box-shadow: 0 8px 18px rgba(0,0,0,.35);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.player:hover .player-photo,
+.player:focus-visible .player-photo {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 24px rgba(0,0,0,.45);
+}
+
+.player-name {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 5px 9px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 999px;
+  background: rgba(13,17,23,.88);
+  font-weight: 800;
+  font-size: clamp(11px, 1.7vw, 15px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.25);
+}
+
+.player-role {
+  display: block;
+  margin-top: 3px;
+  color: #eef2f7;
+  font-size: 10px;
+  text-shadow: 0 1px 2px #000;
+}
+
+.goalkeeper { --role-color: var(--goalkeeper); }
+.defender { --role-color: var(--defender); }
+.midfielder { --role-color: var(--midfielder); }
+.forward { --role-color: var(--forward); }
+.coach { --role-color: var(--coach); }
+.staff { --role-color: var(--staff); }
+
+.staff-section {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--panel);
+}
+
+.staff-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 14px;
+}
+
+.staff-member {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  background: #202630;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.staff-member img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--role-color);
+}
+
+.staff-member strong,
+.staff-member small { display: block; }
+
+.staff-member small { color: var(--muted); margin-top: 2px; }
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  padding: 16px 2px 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.legend span { display: inline-flex; align-items: center; gap: 7px; }
+
+.dot {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--role-color);
+  border: 1px solid rgba(255,255,255,.45);
+}
+
+@media (max-width: 650px) {
+  .app { padding: 10px; }
+  .pitch-shell { padding: 7px; border-radius: 16px; }
+  .pitch { border-radius: 12px; }
+  .team-logo { width: 60px; height: 60px; }
+}

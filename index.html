@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formazione squadra</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="team-header">
+      <div>
+        <p class="eyebrow">FORMAZIONE UFFICIALE</p>
+        <h1 id="team-name">Nome squadra</h1>
+        <p id="formation-label">Modulo 4-3-3</p>
+      </div>
+      <img id="team-logo" class="team-logo" alt="Stemma squadra" />
+    </header>
+
+    <section class="pitch-shell" aria-label="Formazione">
+      <div class="pitch">
+        <div class="center-circle"></div>
+        <div class="halfway-line"></div>
+        <div class="penalty top"></div>
+        <div class="penalty bottom"></div>
+        <div id="players-layer"></div>
+      </div>
+    </section>
+
+    <section class="staff-section">
+      <h2>Staff tecnico</h2>
+      <div id="staff-list" class="staff-list"></div>
+    </section>
+
+    <section class="legend">
+      <span><i class="dot goalkeeper"></i>Portiere</span>
+      <span><i class="dot defender"></i>Difensore</span>
+      <span><i class="dot midfielder"></i>Centrocampista</span>
+      <span><i class="dot forward"></i>Attaccante</span>
+      <span><i class="dot coach"></i>Allenatore</span>
+      <span><i class="dot staff"></i>Staff</span>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
